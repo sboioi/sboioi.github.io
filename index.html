@@ -1,26 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="zxx">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./CSS/style.css">
-    <script src="./JS/main.js" defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>My Travel Blog</title>
 
-    <title>CPSC 2350 Group 3</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="./aboutUs.html">About Us</a>
-        </nav>
-    </header>
-    <main>
-        <h1 id="construction"></h1>
-    </main>
-    <footer>
-    </footer>
-    
-</body>
+	<link rel="stylesheet" href="style.css">
+    <script src="travel.js" defer></script>
+
+  </head>
+  <body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  	<header>
+		<nav class="navbar">
+			<div>
+				<p><a href="#mapSec">Map</a></p>
+			</div>
+			<div class='dropdown'>
+				<p class="dropbtn"><a href="#desSec">Destinations</a></p>
+				<div class="dropdown-content">
+				<a href="#asiaSec">Asia</a>
+				<a href="#ausSec">Australia</a>
+				<a href="#euSec">Europe</a>
+				<a href="#namSec">North America</a>
+				<a href="#samSec">South America<span></span></a>
+				</div>
+			</div>
+			<div>
+				<p><a href="#abtSec">About Me</a></p>
+			</div>
+			
+		</nav>
+	</header>
+	<main>
+		<h1 id='mapSec'>Map</h1>
+		<div class = 'worldmap'>
+			<canvas id='mapMobile' height="500" width="1000"></canvas>
+			<canvas id='map' height="500" width="1000"></canvas>
+		</div>
+		<!-- End of worldmap -->
+		<div class="wrapper">
+
+			<div class = 'lhsCol places' id='desSec'>
+				<h1>Destinations</h1>
+					<div class="subnav">
+						<a href="#asiaSec" class="collapse">Asia</a>
+						<div id='asiaSec'>
+							<div class="asia">
+								<article>
+									<img id ='hk' src="photos/hongkong.jpg" alt="Hong Kong">
+									<p>Hong Kong<span>My Hometown. Love to hike🌄 there</span></p>
+								</article>
+								<article>
+									<img src="photos/bangkok_thailand.jpg" alt="Thailand">
+									<p>Bangkok, Thailand<span>The most frequently visited country</span></p>
+								</article>
+								<article>
+									<img src="photos/kochi_india.JPG" alt="India">
+									<p>Kochi, India<span>Curious the lifestyle in India</span></p>
+								</article>
+								<article>
+									<img src="photos/dead_sea_israel.jpg" alt="Israel">
+									<p>Dead Sea, Israel<span>I can float</span></p>
+								</article>
+								<article>
+									<img src="photos/tokyo_skytree_japan.JPG" alt="Japan">
+									<p>Tokyo, Japan<span>🎌Japanese food and sakura🌸</span></p>
+								</article>
+								<article>
+									<img src="photos/seoul_southKorea.JPG" alt="South Korea">
+									<p>Seoul, South Korea</p>
+								</article>
+								
+								<article>
+									<img src="photos/dubai_UAE.jpg" alt="Dubai">
+									<p>Dubai, UAE<span>My first desert safari!🐫</span></p>
+								</article>
+								<article>
+									<img src="photos/petronas_twin_towers_maylasia.JPG" alt="Malaysia">
+									<p>Petronas Twin Towers, Malaysia<span>Durian and Bah Kut Teh</span></p>
+								</article>
+								<article>
+									<img src="photos/tibet.JPG" alt="Tibet">
+									<p>Tibet<span>Feel like I can touch the sky😍</span></p>
+								</article>
+								
+								
+							</div>
+						</div>
+			
+						<a href="#ausSec" class="collapse">Australia</a>
+						<div id='ausSec'>
+							<div class="australia">
+								<article>
+									<img src="photos/murdunna_TAS.JPG" alt="Murdunna">
+									<p>Tasmania, Australia<span>Sooooo many kangaroos🦘</span></p>
+								</article>
+								<article>
+									<img src="photos/painted_cliffs_tasmania_australia.JPG" alt="Tasmania">
+									<p>Tasmania, Australia<span>Time to dive🤿</span></p>
+								</article>
+								<article>
+									<img src="photos/rottnest_island_perth_australia.JPG" alt="Rottnest Island">
+									<p>Perth, Australia<span>Happiest animal in the world- quokka😎</span></p>
+								</article>
+								<article>
+									<img src="photos/opera_sydney.jpg" alt="Sydney">
+									<p>Sydney, Australia<span>Beer Beer and Beer 🍻</span></p>
+								</article>
+							</div>
+						</div>
+						
+						<a href="#euSec" class="collapse">Europe</a>
+						<div id='euSec'>
+							<div class="eu">
+								<article>
+									<img src="photos/plaza_de_espana_seville_spain.JPG" alt="Plaza de Espana">
+									<p>Seville, Spain<span>Europe’s Most Passionate Country💃</span></p>
+								</article>
+								<article>
+									<img src="photos/acueducto_de_segovia_spain.JPG" alt="Acueducto de Segovia">
+									<p>Segovia, Spain</p>
+								</article>
+								<article>
+									<img src="photos/berlin_germany.JPG" alt="Berlin">
+									<p>Berlin, Germany<span>Memorize history lessons🧱</span></p>
+								</article>
+								<article>
+									<img src="photos/eiffel_tower_france.JPG" alt="Eiffel Tower">
+									<p>Paris, France<span>I don't speak french...</span></p>
+								</article>
+								<article>
+									<img src="photos/netherlands.JPG" alt="Netherlands">
+									<p>Netherlands<span>🌷Tulip festival</span></p>
+								</article>
+							</div>
+						</div>
+
+						<a href="#namSec" class="collapse">North America</a>
+						<div id='namSec'>
+							<div class="northAm">
+								<article>
+									<img src="photos/WTC_us.JPG" alt="World Trade Center">
+									<p>New York, America<span>Freedom 🗽 for everyone</span></p>
+								</article>
+								<article>
+									<img src="photos/grand_canyon.JPG" alt="Grand Canyon">
+									<p>Grand Canyon, America<span>Spectacular place</span></p>
+								</article>
+								<article>
+									<img src="photos/lower_antelope_canyon_us.JPG" alt="Lower Antelope Canyon">
+									<p>Lower Antelope Canyon, America<span>Light from heaven👼</span></p>
+								</article>
+								<article>
+									<img src="photos/yellowknife_canada.JPG" alt="Yellowknife">
+									<p>Yellowknife, Canada<span>Aurora dancing in front of me✨</span></p>
+								</article>
+							</div>
+						</div>
+
+						<a href="#samSec" class="collapse">South America</a>
+						<div id='samSec'>
+							<div class="southAm">
+								<article>
+									<img src="photos/devils_throat_argentina.jpg" alt="Devils Throat">
+									<p>Devils Throat, Argentina<span>Can stare👀 at it foever! Is it a blackhole?</span></p>
+								</article>
+								<article>
+									<img src="photos/valparaiso_chile.JPG" alt="Valparaiso">
+									<p>Valparaiso, Chile<span>Graffiti🎨 everywhere</span></p>
+								</article>
+								<article>
+									<img src="photos/valle_de_la_luna_chile.JPG" alt="Valle de la Luna">
+									<p>Valle de la Luna, Chile<span>Landed on the moon👩‍🚀</span></p>
+								</article>
+								<article>
+									<img src="photos/salar_de_uyuni_bolivia.JPG" alt="Salar de Uyuni">
+									<p>Salar de Uyuni, Bolivia<span>One of my bucket list🙌</span></p>
+								</article>
+			
+							</div>
+						</div>
+					</div>
+			</div>
+			<!-- End of places -->
+			<div class = 'rhsCol'>
+				<ul>
+					<li class='fade'>Born<span class='fade'>Hong Kong</span></li>
+					<li class='fade'>2012<span class='fade'>Japan</span><span class='fade'>Malaysia</span></li>
+					<li class='fade'>2013<span class='fade'>South Korea</span><span class='fade'>France</span></li>
+					<li class='fade'>2014<span class='fade'>Argentina</span><span class='fade'>Thailand</span></li>
+					<li class='fade'>2015<span class='fade'>Tibet</span><span class='fade'>Germany</span></li>
+					<li class='fade'>2016<span class='fade'>India</span><span class='fade'>Netherlands</span></li>
+					<li class='fade'>2017<span class='fade'>Spain</span><span class='fade'>America</span></li>
+					<li class='fade'>2018<span class='fade'>Chile</span><span class='fade'>Bolivia</span></li>
+					<li class='fade'>2019<span class='fade'>Australia</span><span class='fade'>Israel</span></li>
+					<li class='fade'>2020<span class='fade'>Canada</span></li>
+					<li class='fade'>To be continue...</li>
+				</ul>
+			</div>
+			<!-- End of timeline -->
+		</div>
+		<div class='abtMe' id='abtSec'>
+			<img id="profilePic" src="photos/profilePic.JPG" alt="Profile Picture">
+			<p>About Me</p>
+			<p>A dog lover from Hong Kong.</p>
+			<p>Travel is not my hobby.</p>
+			<p>Just love to <em>PLAY</em>.</p>
+
+		</div>
+		<!-- End of about me -->
+		<!-- End of wrapper -->
+	</main>
+	<footer>
+
+		<nav>
+			<ul>
+				<li><a href="https://www.facebook.com/">Facebook</a></li>
+				<li><a href="https://twitter.com/?lang=en-ca">Twitter</a></li>
+				<li><a href="https://www.instagram.com/">Instagram</a></li>
+			</ul>
+		</nav>
+
+	</footer>
+
+  </body>
 </html>
+
+
+<!-- Photo by Tima Miroshnichenko from Pexels -->
